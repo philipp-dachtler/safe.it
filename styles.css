@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f4f4f5;
+  color: #111;
+}
+
+.header {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.new-folder {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.new-folder input {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  flex: 1;
+  max-width: 200px;
+}
+
+.new-folder button {
+  padding: 0.5rem 1rem;
+  background: #007aff;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.folder-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.folder {
+  background: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
