@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Finder" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Finder</title>
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>📁 Finder</h1>
+      <div class="new-folder">
+        <input type="text" id="folderName" placeholder="Neuer Ordnername" />
+        <button id="newFolderBtn">Ordner erstellen</button>
+      </div>
+      <input type="file" id="fileInput" multiple hidden />
+      <div style="display: flex; justify-content: center; gap: 1rem; padding: 0.5rem;">
+        <button id="uploadBtn">📤 Hochladen</button>
+        <button onclick="editFolders()">🗑️ Alle Ordner löschen</button>
+      </div>
+    </header>
+
+    <main id="folders" class="folder-grid">
+      <!-- Ordner erscheinen hier -->
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
